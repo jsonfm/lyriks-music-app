@@ -39,13 +39,13 @@ const Sidebar = () => {
         {mobileMenuOpen 
         ? 
         <RiCloseLine 
-          className="w-6 h-6 text-white mr-2"
+          className="w-6 h-6 text-white mr-2 cursor-pointer"
           onClick={() => setMobileMenuOpen(false)}
         /> 
         : 
         <HiOutlineMenu
-          className="w-6 h-6 text-white mr-2"
-          onClick={() => setMobileMenuOpen(false)}
+          className="w-6 h-6 text-white mr-2 cursor-pointer"
+          onClick={() => setMobileMenuOpen(true)}
         />
         }
       </div>
@@ -61,7 +61,7 @@ const Sidebar = () => {
           className="w-full h-14 object-contain"
         />
         <NavLinks
-          handleClick={() => setmobileMenuOpen(false)}
+          handleClick={() => setMobileMenuOpen(false)}
         />
       </div>
     </>
