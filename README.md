@@ -7,6 +7,11 @@ A music app made with React and Tailwind. It uses redux toolkit and Shazam API, 
 
 
 ### 📦 Installation
+1. clone the repository:
+```
+git clone https://github.com/jsonfm/lyriks-music-app.git
+```
+2. Install dependencies:
 ```
 npm install
 ```
@@ -15,3 +20,10 @@ npm install
 ```
 npm run dev
 ```
+
+### ⚒️ Technologies
+- React.js
+- Tailwind
+- Redux Toolkit
+- Shazam API
+- Swiper
