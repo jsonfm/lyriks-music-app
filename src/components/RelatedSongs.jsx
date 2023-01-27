@@ -1,7 +1,7 @@
 import SongBar from "./SongBar";
 
 
-const RelatedSongs = ({ data, isPlaying, activeSong, handlePlayClick, handlePauseClick }) => {
+const RelatedSongs = ({ data, artistId, isPlaying, activeSong, handlePlayClick, handlePauseClick }) => {
 
 
   if(!data?.tracks) return <p>Not related songs found.</p>
@@ -14,6 +14,7 @@ const RelatedSongs = ({ data, isPlaying, activeSong, handlePlayClick, handlePaus
           <SongBar
             key={song.key} 
             song={song}
+            artistId={artistId}
             i={i}
             activeSong={activeSong}
             isPlaying={isPlaying}

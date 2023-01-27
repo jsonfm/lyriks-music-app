@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 
 const DetailsHeader = ({ artistId, songData, artistData }) => {
-  const artist = artistData?.artists[artistData.artistId]?.attributes;
-  console.log("artist: ", artist);
+  // if(!artistData) return
+  const artist = artistData?.data[0]?.attributes;
+
   return(
     <div className="relative w-full flex flex-col">
       <div className="w-full bg-gradient-to-l from-transparent to-black sm:h-48 h-28">
@@ -18,7 +19,7 @@ const DetailsHeader = ({ artistId, songData, artistData }) => {
             <p className="text-gray-400 mt-2">{songData?.subtitle}</p>
             <p className="text-base text-gray-400 mt-2">
               {artistId
-                ? artist?.genresNames[0]
+                ? artist?.genreNames[0]
                 : songData?.genres?.primary
               }
             </p>

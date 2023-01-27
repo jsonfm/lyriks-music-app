@@ -50,7 +50,7 @@ const TopPlay = () => {
   const divRef = useRef(null);
   const topPlays = data && data?.tracks?.slice(0, 5 );
   // const topPlays = [];
-  console.log("top data: ", topPlays)
+  // console.log("top data: ", topPlays)
   useEffect(() => {
     divRef.current.scrollIntoView({ behavior: "smooth" })
   }, [])
