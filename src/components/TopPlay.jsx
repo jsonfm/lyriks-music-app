@@ -75,7 +75,7 @@ const TopPlay = () => {
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
-        <div class="mt-4 flex flex-col gap-1">
+        <div className="mt-4 flex flex-col gap-1">
           {topPlays?.map((song, i) => (
             <TopChartCard 
               key={song.key} 

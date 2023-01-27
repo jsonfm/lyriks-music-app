@@ -37,7 +37,7 @@ import { playPause, setActiveSong } from "../redux/features/playerSlice";
       </div>
       <div className="mt-4 flex flex-col">
         <p className="font-semibold text-lg text-white truncate">
-          <Link className={`/songs/${song?.key}`}>
+          <Link to={`/songs/${song?.key}`}>
             {song.title}
           </Link>
         </p>
