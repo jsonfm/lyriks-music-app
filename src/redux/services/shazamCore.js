@@ -11,11 +11,13 @@ export const shazamCoreApi = createApi({
         },
     }),
     endpoints: (builder) => ({
-        getTopCharts: builder.query({ query: () => '/songs/list-recommendations?key=484129036&locale=en-US' })
+        getTopCharts: builder.query({ query: () => '/songs/list-recommendations?key=484129036&locale=en-US' }),
+        getSongDetails: builder.query({ query: ({ songid }) => `/songs/get-details?key=${songid}` })
     }),
 })
 
 
 export const {
     useGetTopChartsQuery,
+    useGetSongDetailsQuery,
 } = shazamCoreApi
